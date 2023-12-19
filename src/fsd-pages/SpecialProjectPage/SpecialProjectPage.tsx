@@ -1,6 +1,7 @@
-import { END_POINTS } from "@/shared/constants/endPoints"
+import { ProjectCard, } from '@/entities/special-project'
+import { END_POINTS, } from '@/shared/constants/endPoints'
+
 import styles from './SpecialProjectPage.module.scss'
-import { ProjectCard } from "@/entities/special-project"
 
 
 interface Project {
@@ -12,7 +13,7 @@ interface Project {
 }
 
 const getProject: () => Promise<Project> = () => {
-  return fetch(END_POINTS.getProject).then((response) => {
+  return fetch(END_POINTS.getProject).then(response => {
     return response.json()
   })
 }
@@ -25,7 +26,7 @@ export const SpecialProjectPage = async (): Promise<JSX.Element> => {
     <div
       className={ styles.page }
       style={ {
-        backgroundImage: `url("${projectData.image_link}")`
+        backgroundImage: `url("${projectData.image_link}")`,
       } }
     >
       <div className={ styles.contentWrapper }>

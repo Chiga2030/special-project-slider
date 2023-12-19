@@ -1,4 +1,4 @@
-import { SpecialProjectPage } from "@/fsd-pages/SpecialProjectPage"
+import { SpecialProjectPage, } from '@/fsd-pages/SpecialProjectPage'
 
 
 export default function Home () {
