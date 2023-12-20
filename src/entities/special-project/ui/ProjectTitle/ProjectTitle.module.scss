@@ -10,9 +10,22 @@
     content: "«";
     position: absolute;
     left: -3rem;
+
+    @media screen and (max-width: 768px) {
+      left: -.9rem;
+    }
   }
 
   &::after {
     content: "»";
+  }
+
+
+  @media screen and (max-width: 1024px) {
+    font-size: 4rem;
+  }
+
+  @media screen and (max-width: 768px) {
+    font-size: 2rem;
   }
 }

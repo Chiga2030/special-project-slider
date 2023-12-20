@@ -27,7 +27,7 @@ export const ProjectCard = ({
 
       <ProjectDescription>{ description }</ProjectDescription>
 
-      <Button>Подробнее</Button>
+      <Button className={ styles.button }>Подробнее</Button>
     </div>
   )
 }

@@ -3,4 +3,9 @@
   gap: 1.125rem;
   width: fit-content;
   transition: transform .2s ease-in-out;
+
+
+  @media screen and (max-width: 1024px) {
+    gap: .75rem;
+  }
 }
