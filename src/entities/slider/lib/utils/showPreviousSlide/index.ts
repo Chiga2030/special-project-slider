@@ -1,0 +1,1 @@
+export { showPreviousSlide } from './showPreviousSlide'
