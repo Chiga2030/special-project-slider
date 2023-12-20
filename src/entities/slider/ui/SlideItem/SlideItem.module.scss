@@ -1,0 +1,31 @@
+.wrapper {
+  width: 12.0625rem;
+  height: 21.5rem;
+  position: relative;
+  object-fit: contain;
+  border-radius: .625rem;
+  overflow: hidden;
+}
+
+
+.inner {
+  height: 100%;
+  box-sizing: border-box;
+  position: relative;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 22.09%, rgba(0, 0, 0, 0.62) 71.8%);
+}
+
+
+.image {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 22.09%, rgba(0, 0, 0, 0.62) 71.8%);
+}
+
+
+.title {
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  padding: 1rem;
+  font-size: 1.25rem;
+  font-weight: 700;
+}

@@ -1,5 +1,6 @@
 import { ProjectCard, } from '@/entities/special-project'
 import { END_POINTS, } from '@/shared/constants/endPoints'
+import { Slider, } from '@/widgets/Slider'
 
 import styles from './SpecialProjectPage.module.scss'
 
@@ -31,6 +32,8 @@ export const SpecialProjectPage = async (): Promise<JSX.Element> => {
     >
       <div className={ styles.contentWrapper }>
         <ProjectCard { ...projectData } />
+
+        <Slider />
       </div>
     </div>
   )
