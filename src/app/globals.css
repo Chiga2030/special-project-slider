@@ -1,4 +1,14 @@
+:root {
+  --primary-color: #fff;
+  --secondary-color: #333;
+
+  --primary-bg-color: #fff;
+  --secondary-bg-color: #F38600;
+}
+
+
 html,
 body {
   margin: 0;
+  color: var(--primary-color)
 }
