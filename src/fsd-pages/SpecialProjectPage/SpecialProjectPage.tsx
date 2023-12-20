@@ -30,7 +30,7 @@ export const SpecialProjectPage = async (): Promise<JSX.Element> => {
       } }
     >
       <div className={ styles.contentWrapper }>
-        <ProjectCard />
+        <ProjectCard { ...projectData } />
       </div>
     </div>
   )
