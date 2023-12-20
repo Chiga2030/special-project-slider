@@ -1,0 +1,1 @@
+export { getAmountSlides } from './getAmountSlides'

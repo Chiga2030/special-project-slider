@@ -13,7 +13,7 @@ export const SlideList = ({
   slideList,
 }: Props): JSX.Element => {
   return (
-    <div className={ styles.wrapper }>
+    <div className={ styles.wrapper } id={ 'slider-slide-flow' }>
       { slideList.map(slide => (
         <SlideItem key={ slide.id } { ...slide } />
       )) }

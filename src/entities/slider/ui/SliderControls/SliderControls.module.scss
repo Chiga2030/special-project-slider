@@ -1,4 +1,11 @@
 .wrapper {
   display: flex;
+  gap: .75rem;
+  align-items: center;
+}
+
+
+.inner {
+  display: flex;
   gap: 1rem;
 }

@@ -16,6 +16,7 @@ export const ControlButton = ({
 }: Props): JSX.Element => {
   return (
     <button
+      id={ direction === 'left' ? 'previous-slide-button' : 'next-slide-button' }
       className={ styles.button }
       type={ 'button' }
     >

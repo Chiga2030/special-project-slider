@@ -1,0 +1,15 @@
+.progressLine {
+  width: 15rem;
+  height: 2px;
+  background-color: #ffffff4d;
+  display: inline-block;
+  position: relative;
+}
+
+
+.thumb {
+  position: absolute;
+  height: 2px;
+  background-color: var(--primary-bg-color);
+  display: inline-block;
+}

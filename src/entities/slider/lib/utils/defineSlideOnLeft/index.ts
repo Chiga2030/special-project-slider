@@ -1,0 +1,1 @@
+export { defineSlideOnLeft } from './defineSlideOnLeft'
