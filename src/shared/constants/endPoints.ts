@@ -1,7 +1,19 @@
-const DATA_BASE_URL = 'http://localhost:3001'
+interface Global {
+  /**
+   * Это хак, так как хостинг неизвестен.
+   */
+  __incrementalCache: {
+    requestHeaders: {
+      referer: string
+    }
+  }
+}
+
+// eslint-disable-next-line no-underscore-dangle
+const DATA_BASE_URL = (global as unknown as Global).__incrementalCache.requestHeaders.referer
 
 
 export const END_POINTS = {
-  getProject: `${DATA_BASE_URL}/getProject`,
-  getMaterials: `${DATA_BASE_URL}/getMaterials`,
+  getProject: `${DATA_BASE_URL}/api/getProject`,
+  getMaterials: `${DATA_BASE_URL}/api/getMaterials`,
 }
