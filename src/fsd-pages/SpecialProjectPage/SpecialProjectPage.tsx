@@ -26,7 +26,7 @@ export const SpecialProjectPage = async (): Promise<JSX.Element> => {
     <div
       className={ styles.page }
       style={ {
-        backgroundImage: `url("${projectData.image_link}")`,
+        backgroundImage: `linear-gradient(0deg, rgba(0, 0, 0, 0.60) 0%, rgba(0, 0, 0, 0.60) 100%), url("${projectData.image_link}")`,
       } }
     >
       <div className={ styles.contentWrapper }>
