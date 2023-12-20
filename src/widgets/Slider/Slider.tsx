@@ -1,5 +1,5 @@
 import type { Slide, } from '@/entities/slider'
-import { SlideList, } from '@/entities/slider'
+import { SlideList, SliderControls, } from '@/entities/slider'
 import { END_POINTS, } from '@/shared/constants/endPoints'
 
 import styles from './Slider.module.scss'
@@ -18,6 +18,8 @@ export const Slider = async (): Promise<JSX.Element> => {
   return (
     <div className={ styles.wrapper }>
       <SlideList slideList={ slideList } />
+
+      <SliderControls />
     </div>
   )
 }

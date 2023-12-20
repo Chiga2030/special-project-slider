@@ -1,0 +1,25 @@
+.button {
+  background: none;
+  border-radius: 50%;
+  border: 1px solid var(--primary-bg-color);
+  padding: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--primary-color);
+
+
+  &:hover {
+    border-color: var(--secondary-bg-color);
+    fill: var(--secondary-bg-color);
+  }
+}
+
+
+.icon {
+  fill: inherit;
+
+  &_right {
+    transform: rotate(180deg);
+  }
+}
